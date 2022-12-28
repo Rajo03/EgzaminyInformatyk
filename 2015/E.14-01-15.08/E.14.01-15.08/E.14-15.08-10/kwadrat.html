@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Kwadrat</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+  <header>
+<a href="index.html">FIGURY GEOMETRYCZNE I MATEMATYCY</a>
+  </header>
+  <nav>
+<h3>WYBIERZ FIGURĘ</h3>
+<ol>
+<li><a href="kwadrat.html">KWADRAT</a>
+<ul>
+<li>Obwód</li>
+<li>Pole</li>
+</ul>
+</li>
+<li><a href="kolo.html">KOŁO</a>
+<ul>
+<li>Obwód</li>
+<li>Pole</li>
+</ul>
+</li>
+</ol>
+<h3><a href="../baza/matematycy.accdb">BAZA DANYCH</a></h3>
+  </nav>
+  <main>
+<h1>KWADRAT</h1>
+<p><i>Podaj długość boku</i> <input id="input1" type="number"></p>
+<p><button onclick="p()">licz pole</button> <button onclick="obw()">licz obwód</button></p>
+<output id="output1"></output>
+  </main>
+  <footer>
+Strona stworzona przez: PESEL
+  </footer>
+<script>
+function p() {
+ if (input1.value=="" || (typeof input1.value*1)=="") {
+ alert("Należy wpisać wartość liczbową")
+ }
+ else {
+ output1.innerHTML="P = a<sup>2</sup>= "+(input1.value*input1.value)
+ }
+}
+function obw() {
+ if (input1.value=="" || (typeof input1.value*1)=="") {
+ alert("Należy wpisać wartość liczbową")
+ }
+ else {
+ output1.innerHTML="Obw = 4a = "+(4*input1.value)
+ }
+}
+</script>
+ </body>
+</html>

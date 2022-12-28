@@ -1,0 +1,29 @@
+nav {
+width: 20%;
+height: 500px;
+}
+main {
+width: 80%;
+}
+header, nav, footer {
+background: #63b03c;
+color: white;
+}
+header a, nav a, footer a {
+color: white;
+}
+header {
+font: small-caps 300% Arial;
+}
+header, footer {
+text-align: center;
+}
+ul {
+list-style-type: square;
+}
+nav, main {
+float: left;
+}
+footer {
+clear: left;
+}
