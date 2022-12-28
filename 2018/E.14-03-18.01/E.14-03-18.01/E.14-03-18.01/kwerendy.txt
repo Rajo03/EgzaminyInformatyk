@@ -1,0 +1,5 @@
+Zapytanie 1: INSERT INTO `ogloszenie` (`id`, `uzytkownik_id`, `kategoria`, `podkategoria`, `tytul`, `tresc`) VALUES
+(NULL, 1, 2, 13, 'Celine Dion', 'Sprzedam CD piosenkarki');
+Zapytanie 2: SELECT `ogloszenie`.`tytul`, `ogloszenie`.`tresc` FROM `ogloszenie` WHERE `ogloszenie`.`kategoria` = 1 AND `ogloszenie`.`podkategoria` = 13
+Zapytanie 3: CREATE USER 'andrzej'@'localhost' IDENTIFIED BY 'xsw23'
+Zapytanie 4: GRANT SELECT, ALTER ON `ogloszenia`.`ogloszenie` TO 'andrzej'@'localhost'

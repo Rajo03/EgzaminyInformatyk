@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<title>Szkoła ponadgimnazjalna</title>
+	<script type="text/javascript">
+		function licz() {
+			var p = document.getElementById('p').value;
+			var n = document.getElementById('n').value;
+			var r = document.getElementById('r').value;
+			var sr = (parseInt(p)+parseInt(n)+parseInt(r))/3
+
+			if ( isNaN(sr) || isNaN(p || n || r) || p  === "" || n  === "" || r  === "" ) 
+			{
+				alert("wpisz poprawne dane");
+			}
+			else
+			{	
+			document.getElementById('out').innerHTML = sr ;
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<h2>Projekt strony internetowej szkoły ponadgimnazjalnej</h2>
+	</header>
+	<nav>
+		<h3>Do pobrania</h3>
+		<ul>
+			<a href="../baza/zapytania.txt"><li>Zapytania SQL</li></a>
+			<a href="../baza/szkola_nowa.sql"><li>baza danych</li></a>
+		</ul>
+	</nav>
+	<main>
+		<table>
+			<tr>
+				<th>Treść zapytania</th><th width="405">Zrzut ekranu</th>
+			</tr>
+			<tr>
+				<th>INSERT INTO `uczen` (`id`, `nazwisko`, `imie`, `id_klasy`) VALUES ('27', 'Jasny', 'Wiktoria', '1');</th><th><img src="kwerenda1.jpg" alt="kwerenda1.jpg"></th>
+			</tr>
+			<tr>
+				<th> SELECT wychowawca.imie, wychowawca.nazwisko FROM wychowawca inner JOIN uczen ON wychowawca.id_klasy= uczen.id_klasy where uczen.nazwisko = "Markiewicz"</th><th><img src="kwerenda2.jpg" alt="kwerenda2.jpg"></th>
+			</tr>
+			<tr>
+				<th>CREATE USER 'Jan_Bogucki'@'localhost' IDENTIFIED BY 'jb_123'</th><th><img src="nowy_uzytkownik.jpg" alt="nowy_uzytkownik.jpg"></th>
+			</tr>
+			<tr>
+				<th>GRANT SELECT, INSERT, DROP ON szkola.uczen TO 'Jan_Bogucki'@'localhost'</th><th><img src="uprawnienia.jpg" alt="uprawnienia.jpg"></th>
+			</tr>
+		</table>
+	</main>
+	<aside>
+		<h4>Obliczanie średniej ocen</h4>
+		<ul>
+			<label><li>Polak<input type="text" id="p"></li></label>
+			<label><li>Nowak<input type="text" id="n"></li></label>
+			<label><li>Rysik<input type="text" id="r"></li></label>
+		</ul>
+		<input type="submit" name="send" value="oblicz" onclick="licz()">
+		<h4>Średnia ocen:</h4><h4 id="out"></h4>
+	</aside>
+	<footer>
+		<h5>autor strony: ………….</h5>
+	</footer>
+</body>
+</html>

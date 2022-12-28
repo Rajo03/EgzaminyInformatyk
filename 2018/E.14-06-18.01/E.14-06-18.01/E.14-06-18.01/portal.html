@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Ogłoszenia</title>
+	<link rel="stylesheet" type="text/css" href="styl6.css">
+	<script type="text/javascript">
+		function obliczanie()
+		{
+			var x = document.getElementById("num").value;
+			var suma=(x*3)-(0.1*3*x);
+			var suma2=(x*2)-(0.15*2*x);
+			
+			if (x>=1 && x<=40 && document.getElementById("check").checked==false)
+			{
+				document.getElementById("wynik").innerHTML="Twoje ogłoszenia będą kosztować: "+x*3+ " PLN";
+			}
+			else if (x>=1 && x<=40 && document.getElementById("check").checked==true)
+			{
+				document.getElementById("wynik").innerHTML="Twoje ogłoszenia będą kosztować: "+ suma + " PLN";
+			}
+			else if (x>=41 &&  document.getElementById("check").checked==false)
+			 {
+			 	document.getElementById("wynik").innerHTML="Twoje ogłoszenia będą kosztować: "+x*2+ " PLN";
+			 }
+			  else if (x>=41 &&  document.getElementById("check").checked==true) 
+			 {
+			 	document.getElementById("wynik").innerHTML="Twoje ogłoszenia będą kosztować: "+ suma2 + " PLN";
+			 }
+			
+		}
+	</script>
+</head>
+<body>
+<div id="baner">
+	<h1>Ogłoszenia drobne</h1>
+</div>
+<div class="info">
+	<h3>telefon</h3>
+	<p>601601601</p>
+</div>
+<div class="info">
+	<h3>e-mail</h3>
+	<p>ogloszenia@poczta.pl</p>
+</div>
+<div class="info">
+	<h3>Adres</h3>
+	<p>ul. Morska 45 Gdynia</p>
+</div>
+<div class="info">
+	<img src="logo.png">
+</div>
+<div id="pl">
+	<h2>Ceny</h2>
+		<table>
+			<tr>
+				 <td>Ile?</td> <td>Koszt</td> <td>Upust</td>
+			</tr>
+			<tr>
+				 <td>1-40</td> <td>3 PLN</td> <td rowspan="2">0,30 PLN dla stałych klientów</td>
+			</tr>
+			<tr>
+				<td>41 i więcej</td> <td>2 PLN</td> 
+			</tr>
+		</table>
+</div>
+<div id="ps">
+	<h2>Policz koszta</h2>
+	Liczba ogłoszeń: <input type="number" id="num"> <br>
+	<input type="checkbox" id="check">Jestem stałym klientem <br>
+	<input type="submit" value="Kalkulacja" id="przycisk" onclick="obliczanie()">
+	<p id="wynik"></p>
+</div>
+<div id="pp">
+	<h2>Znajdujesz się na stronie portalu ogłoszeniowego</h2>
+	<img src="grafika.png" alt="Oblicz koszt ogłoszenia">
+</div>
+<div id="stopka">
+	Portal ogłoszeniowy opracował: 00000000000
+</div>
+</body>
+</html>

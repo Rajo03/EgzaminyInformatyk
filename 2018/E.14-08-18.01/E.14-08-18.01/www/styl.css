@@ -1,0 +1,60 @@
+body,html
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	font-family: Tahoma;
+}
+#baner
+{
+	background-color:  #af8c4b;
+	text-align: center;
+	height: 60px;
+}
+#pl
+{
+	background-color:  #af8c4b;
+	text-align: right;
+	width: 30%;
+	height: 500px;
+	float: left;
+}
+#pl li
+{
+	list-style-type: circle;
+}
+#pp
+{
+	background-color: #ffd87e;
+	width: 70%;
+	height: 500px;
+	float: left;
+	overflow: scroll;
+
+}
+#stopka
+{
+	background-color:  #af8c4b;
+	text-align: center;
+	height: 25px;
+	clear: both;
+
+}
+hr
+{
+	background-color: #ffd87e;
+}
+td, th
+{
+	border: 1px dotted black;
+}
+a
+{
+	color: #ffd87e;
+}
+.prawy
+{
+	width: 405px;
+}

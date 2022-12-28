@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styl.css">
+	<title>Szkoła ponadgimnazjalna</title>
+	<script type="text/javascript">
+		function licz() {
+			var p = document.getElementById('p').value;
+			var n = document.getElementById('n').value;
+			var r = document.getElementById('r').value;
+			var sr = Math.min(p,n,r)
+
+			if ( isNaN(sr) || isNaN(p || n || r) || p  === "" || n  === "" || r  === "" ) 
+			{
+				alert("wpisz poprawne dane");
+			}
+			else
+			{	
+			document.getElementById('out').innerHTML = sr ;
+			}
+		}
+		
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Projekt strony internetowej szkoły ponadgimnazjalnej</h1>
+	</header>
+	<nav>
+		<table>
+			<tr>
+				<th>Treść zapytania</th><th width="400">Zrzut ekranu</th>
+			</tr>
+			<tr>
+				<th>INSERT INTO `klasa` (`id`, `nazwa`) VALUES ('5', '3a');</th><th><img src="kwerenda1.jpg" alt="kwerenda1.jpg"></th>
+			</tr>
+			<tr>
+				<th>SELECT `klasa`.`nazwa`, AVG(`uczen`.`Srednia_ocen`) FROM `klasa` INNER JOIN `uczen` ON `klasa`.`id` = `uczen`.`id_klasy` GROUP BY `klasa`.`nazwa`</th><th><img src="kwerenda2.jpg" alt="kwerenda2.jpg"></th>
+			</tr>
+			<tr>
+				<th>CREATE USER 'Dyrektor'@'localhost' IDENTIFIED BY 'dyr_123'</th><th><img src="nowy_uzytkownik.jpg" alt="nowy_uzytkownik.jpg"></th>
+			</tr>
+			<tr>
+				<th>GRANT ALL ON `szkola`.* TO 'Dyrektor'@'localhost'</th><th><img src="uprawnienia.jpg" alt="uprawnienia.jpg"></th>
+			</tr>
+		</table>
+	</nav>
+	<main>
+		<h2>Do pobrania</h2>
+		<ul class="pt">
+			<li><a href="../baza/zapytania.txt" >zapytania SQL</a></li>
+			<li><a href="../baza/szkola_nowa.sql">baza danych</a></li>
+		</ul>
+		<hr class="hr">
+		<h3>Wyznaczanie najniższej średniej</h3>
+		<ul class="pt">
+			<li><label>Polak <input type="text" id="p"></label></li>
+			<li><label>Nowak <input type="text" id="n"></label></li>
+			<li><label>Rysik <input type="text" id="r"></label></li>
+		</ul>
+		<input type="submit" id="send" value="wyznacz" onclick="licz()">
+		<h3>Najniższa średnia: </h3><h3 id="out"></h3>
+	</main>
+	<footer>
+		<h3>stronę wykonał:</h3>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body, html 
+{
+	margin: 0 auto;
+	padding: 0;
+	font-family: Arial;
+	color: white;
+}
+
+header
+{
+	background-color: #5957a1;
+	text-align: center;
+	padding: 10px;
+	height: 70px;
+}
+
+nav
+{
+	background-color: #bbadcd;
+	width: 65%;
+	height: 450px;
+	float: left;
+	overflow: scroll;
+}
+
+main
+{
+	background-color: #5957a1;
+	text-align: center;
+	width: 35%;
+	height: 450px;
+	float: left;
+}
+
+footer
+{
+	background-color: #5957a1;
+	text-align: center;
+	height: 50px;
+	clear: left;
+}
+
+.hr
+{
+	color: yellow;
+}
+
+.pt
+{
+	list-style-type: square;
+}
+
+a
+{
+	color: yellow;
+}
+
+th
+{
+	border: 1px dashed black;
+}

@@ -1,0 +1,62 @@
+body, html
+{
+	margin: 0 auto;
+	padding: 0;
+	font-family: Verdana;
+}
+
+header
+{
+	background-color: #ffb31c;
+	text-align:center;
+	height: 60px;
+}
+
+nav
+{
+	background-color: #ffb31c;
+	width: 20%;
+	height: 480px;
+	float: left;
+}
+
+main
+{
+	background-color: #ffcb71;
+	width: 60%;
+	height: 480px;
+	float: left;
+	overflow: scroll;
+}
+
+aside
+{
+	background-color: #ffb31c;
+	text-align: right;
+	width: 20%;
+	height: 480px;
+	float: left;
+}
+
+footer
+{
+	background-color: #ffb31c;
+	text-align:center;
+	height: 30px;
+	clear: left;
+}
+
+a
+{
+	color: brown;
+}
+
+ul
+{
+	list-style: square;
+}
+
+th
+{
+	border: 1px solid black;
+}
