@@ -1,0 +1,4 @@
+a) SELECT Model, Typ FROM `artykuly` ORDER BY `artykuly`.`Cena` ASC
+b) SELECT `producenci`.`Nazwa` , `artykuly`.`Model`, `artykuly`.`Typ` FROM `artykuly` INNER JOIN `producenci` on `artykuly`.`ProducenciID`=`producenci`.`IDProducenci`
+c) SELECT `artykuly`.`Model` FROM `magazyn` INNER JOIN `artykuly` on `magazyn`.`IDMagazyn`=`artykuly`.`IDArtykuly` where `magazyn`.`Ilosc` = 0
+d) INSERT INTO `producenci` (`IDProducenci`, `Nazwa`, `URL`) VALUES ('3', 'Samsung', 'samsung.pl');

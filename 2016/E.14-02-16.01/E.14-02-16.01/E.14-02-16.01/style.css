@@ -1,0 +1,46 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+}
+#baner
+{
+	color: white;
+	background-color: #6F851E;
+	padding: 10px;
+	text-align: center;
+	text-decoration-style: initial;
+}
+
+#pl 
+{
+	color: white;
+	background-color: #7C9421;
+	width: 25%;
+	height: 400px;
+	text-align: center;
+	float: left;
+}
+
+#pp
+{
+	width: 75%;
+	height: 400px;
+	text-align: center;	
+	float: left;
+}
+
+#stopka
+{
+	clear: left;
+	color: white;
+	background-color: #6F851E;
+	padding: 10px;
+	text-align: center;
+	text-decoration-style: initial;
+}
+
+#pl a
+{
+	color: white;
+}
