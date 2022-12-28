@@ -1,0 +1,53 @@
+body{
+	margin:0;
+}
+
+
+#cont{
+height: 100%;
+width: 100%;
+}
+
+#baner{
+background-color: #45517D;
+color: white;
+font-size: 120%;
+text-align: right;
+height: 60px;
+width: 100%;
+}
+
+#pl{
+background-color: #61B2EC;
+width: 40%;
+height: 500px;
+float: left;
+}
+
+#pp{
+background-color: #8EC9F2;
+width: 60%;
+height: 500px;
+float: left;
+}
+
+section { 
+    display: block;
+    background-color: #45517D;
+    color:white;
+    font-size:150%;
+    text-align: center;
+}
+
+a:visited {
+    color: green;
+}
+
+a:link {
+    color: orange;
+}
+
+li {
+	padding: 2px;
+	margin-left: 10px;
+}
